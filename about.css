@@ -1,0 +1,111 @@
+/* Estilos para la sección "Sobre nosotros" */
+.about {
+    background-color: #050404;
+    /* Fondo negro */
+    color: #fff;
+    /* Texto blanco */
+    padding: 60px 0;
+    /* Espacio interno superior e inferior */
+}
+
+.container {
+    max-width: 1200px;
+    /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centrado horizontal */
+    overflow: hidden;
+    /* Clearfix para los floats internos */
+}
+
+.about-content {
+    float: left;
+    width: 65%;
+    /* Columna izquierda para el contenido */
+    margin-right: 5%;
+    /* Margen derecho para separar las columnas */
+}
+
+.skills {
+    float: left;
+    width: 30%;
+    /* Columna derecha para las habilidades */
+}
+
+/* Clearfix para limpiar el float */
+.about-content::after,
+.skills::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Estilos para los títulos de la sección "Sobre nosotros" */
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    /* Convertir a mayúsculas */
+    letter-spacing: 1px;
+    /* Espaciado entre letras */
+}
+
+.about h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #658bdb;
+    /* Color dorado para los subtítulos */
+}
+
+/* Estilos para los párrafos */
+.about p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las listas de habilidades */
+.about .skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about .skills ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para las imágenes */
+.about img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    /* Bordes redondeados para las imágenes */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+
+    .about-content,
+    .skills {
+        float: none;
+        /* Quita el float para que las columnas se apilen */
+        width: 100%;
+        /* Ancho completo en dispositivos móviles */
+        margin-right: 0;
+        /* Sin margen entre columnas en dispositivos móviles */
+        margin-bottom: 20px;
+        /* Espacio inferior entre columnas en dispositivos móviles */
+    }
+
+    .about h2 {
+        font-size: 2em;
+        /* Tamaño de fuente reducido para títulos en móvil */
+    }
+
+    .about h3 {
+        font-size: 1.5em;
+        /* Tamaño de fuente reducido para subtítulos en móvil */
+    }
+}
