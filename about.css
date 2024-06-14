@@ -6,6 +6,8 @@
     /* Texto blanco */
     padding: 60px 0;
     /* Espacio interno superior e inferior */
+    text-align: justify;
+    /* Justificar texto */
 }
 
 .container {
@@ -47,6 +49,8 @@
     /* Convertir a mayúsculas */
     letter-spacing: 1px;
     /* Espaciado entre letras */
+    text-align: center;
+    /* Centrar texto */
 }
 
 .about h3 {
@@ -54,12 +58,16 @@
     margin-bottom: 10px;
     color: #658bdb;
     /* Color dorado para los subtítulos */
+    text-align: center;
+    /* Centrar texto */
 }
 
 /* Estilos para los párrafos */
 .about p {
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: justify;
+    /* Justificar texto */
 }
 
 /* Estilos para las listas de habilidades */
@@ -107,5 +115,10 @@
     .about h3 {
         font-size: 1.5em;
         /* Tamaño de fuente reducido para subtítulos en móvil */
+    }
+
+    .about p {
+        text-align: justify;
+        /* Justificar texto en móvil */
     }
 }
